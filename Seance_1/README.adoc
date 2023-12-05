@@ -1,0 +1,21 @@
+:hardbreaks:
+= Seance 2
+
+== Objectifs opérationnels
+// tag::OO[]
+*Programmation modulaire*
+
+* Je découpe un programme en plusieurs fonctions 
+* Je découpe un programme en plusieurs fichiers 
+
+*Structures*
+
+* Je déclare et utilise une structure correspondant à un besoin 
+
+*Gestion dynamique de la mémoire*
+
+* Je comprends le fonctionnement d'un pointeur 
+* Je connais les cas d'utilisation d'un pointeur 
+* Je déclare un pointeur et un tableau dynamique 
+* Je manipule une liste chainée 
+// end::OO[]

@@ -1,0 +1,13 @@
+:hardbreaks:
+:experimental:
+= Calculatrice
+
+Cette calculatrice est entièrement codée dans le main, vous allez devoir :
+
+ * Sortir chaque opération du main
+ * Ajouter les opérations *multiplier* et *diviser* (n'oubliez pas de vérifier qu'on ne divise jamais par 0 et d'afficher le reste)
+ * Déplacer toutes ces opérations dans un second fichier 
+ 
+Bonus
+
+ * Implémentez une factorielle et un PGCD

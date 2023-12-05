@@ -1,0 +1,75 @@
+:hardbreaks:
+:experimental:
+= Git
+
+https://git-scm.com/book/fr/v2
+
+Livre complet, officiel et en français pour apprendre à utiliser git.
+
+*Git* est un système de gestion de version distribué.
+Il est utilisé par de nombreuses équipes.
+
+Un *systeme de gestion de version* (VCS) est un logiciel qui permet de suivre les modifications apportées à un ensemble de fichiers.
+
+Git est un VCS *distribué* car l'ensemble du repository distant est dupliqué en local.
+
+Un repository (*repo*) est un ensemble de fichiers versionnés, en local ou sur un seveur.
+
+Git peut être intégré dans des suites logiciels, généralement en ligne, tel que *gitlab*, github ou bitbucket, qui propose une interface graphique ainsi qu'un ensemble de services liés au développement (gestion de tickets, pipeline CI/CD, intégration d'autres logiciels).
+
+Un *commit* est une ensemble de modifications incrémentales (différences avec le précédent commit) associé à un nom et un hash (unique).
+Un commit pointe vers le commit précédent, on ne peut pas modifier un commit sans modifier tous les suivants.
+
+Une *branche* est une suite de commits dont le plus récent est marqué par une étiquette.
+
+Un *merge* permet de fusionner les modifications de deux branches différentes.
+
+Un élément n'a pas sa place dans git si : 
+* On ne peut pas consulter le diff entre deux versions (ex: une vidéo)
+* Vous n'êtes pas ammenés à le faire évoluer vous même (ex: une biliothèque)
+On peut tolérer de petits objets liés aux éléments versionnés (ex: images, font)
+
+*HEAD* est une étiquette indiquant là où vous êtes actuellement.
+
+== Commandes git importantes
+Doc officielle de git : https://git-scm.com/docs
+
+
+Dans vscode, l'utilisation de git passe par l'onglet Source Control (sur la gauche).
+Une action peut être proposé sur le bouton bleu, toutes les actions peuvent être retrouvées sur les (...) View and More Actions.
+Toutes les indications "Dans vscode" seront donné à partir de là.
+
+|===
+|Commmande git | Dans vscode | Explication
+
+|git clone [url-repo-groupe.git] | kbd:[Ctrl+Shift+p] (ouvre la Command Palette) `Git: clone` | Clone localement le repo
+|git chechout <branch_name> |Checkout to...| Vous place sur une branche (au niveau de l'étiquette)
+|git checkout -b <branch_name> |Branch->Create Branch...| Crée une nouvelle branche (une étiquette) sur le commit actuel et vous place dessus
+|git fetch --all | Fetch | Liste tout ce qui est nouveau sur le serveur
+|git add | bouton + dans la liste des modifications| Fige les modification d'un fichier pour le prochain commit
+|git merge <branch_name> |Branch->Merge Branch...| Fusionne les commit de la branche <branch_name> dans la branche actuelle
+|git pull|Pull| Effectue un ``git fetch`` puis un ``git merge`` si nécessaire
+|git push [origin] [branch_name] |Push| Pousse vos modifications locales commitées sur le repo distant
+|git push [origin] [branch_name] -f |Pas disponible| *ATTENTION !* Force le git push en écrasant le repo distant. Pas de retour en arrière possible, il faut être sûr de vous.
+|=== 
+
+== Exemple d'utilisation
+
+----
+      A---B---C topic HEAD
+     /
+D---E---F---G master
+----
+git checkout master
+----
+      A---B---C topic
+     /
+D---E---F---G master HEAD
+----
+
+git merge topic
+----
+      A---B---C topic     
+     /         \
+D---E---F---G---H master HEAD
+----

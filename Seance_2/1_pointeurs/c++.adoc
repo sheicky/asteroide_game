@@ -1,0 +1,27 @@
+:hardbreaks:
+:experimental:
+= C++
+
+== Les pointeurs
+
+[source, C++]
+----
+int main()
+{
+    int a = 3; // Une variable
+    int *pt(0); // Un pointeur (initialisé à 0)
+    pt = &a; // pt pointe vers a
+    cout << "La valeur de a est" << *pt << endl;
+}
+
+----
+
+
+|=== 
+|int a | une variable
+|a | la valeur de a
+|&a | l'addresse de a
+|int *pt |  un pointeur
+|pt | l'addresse pointée
+|*pt | la valeur de la variable pointée
+|===

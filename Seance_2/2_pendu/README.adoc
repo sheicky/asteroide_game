@@ -1,0 +1,24 @@
+:hardbreaks:
+= Pendu
+
+Vous allez réaliser un pendu en console.
+Le jeu se déroule comme suit :
+Le premier joueur entre un mot.
+Le second joueur peut proposer des lettres une à une.
+Le jeu vérifie si la lettre existe dans le mot.
+Si la lettre est présente, elle est affichée à chaque emplacement du mot.
+Le second joueur à le droit de se tromper X fois.
+
+Exemple : mot pomme et o demandé \*o*\**
+e demandé \*o**e
+
+Fin du jeu :
+Le second joueur n'a plus de tentatives : perdu
+Le second joueur a trouvé toutes les lettres du mot : gagné
+
+
+*Idées à ajouter :*
+Nettoyez la console après que le premier joueur ait entré le mot.
+Dessiner une potence en console.
+Afficher la liste des lettres tentées.
+Proposer de commencer une autre partie.

@@ -1,0 +1,12 @@
+:hardbreaks:
+= Seance 7
+
+== Objectifs opérationnels
+// tag::OO[]
+
+*Ouverture à la sécurité*
+
+* Je sais que le code peut être décompilé et qu'il ne faut pas y laisser de données sensibles.
+
+* Je sais qu'il est possible d'abuser des entrées utilisateurs (buffer overflow) et qu'il faut les sécuriser.
+// end::OO[]

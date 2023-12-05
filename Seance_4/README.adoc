@@ -1,0 +1,14 @@
+:hardbreaks:
+= Seance 4
+
+== Objectifs opérationnels
+// tag::OO[]
+
+*Utilisation avancée des objets*
+
+* Je sais quand utiliser une méthode const et static 
+
+* J'utilise des méthodes virtuelles et classe abstraites 
+
+* J'utilise une collection hétérogène 
+// end::OO[]

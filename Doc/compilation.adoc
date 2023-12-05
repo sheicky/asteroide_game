@@ -1,0 +1,26 @@
+= La compilation
+
+== Préprocessing
+
+Effectue les actions des lignes '#'
+Retire les commentaires
+
+g++ -E main.cpp > main.i
+
+== Compilation
+
+Traduction du code en assembleur
+
+g++ -S main.cpp
+
+== Assemblage
+
+Traduction en instructions processeur
+
+g++ -c main.cpp
+
+== Edition des liens
+
+S'il y a plusieurs fichiers, les réunit dans un seul fichier de sortie
+
+g++ main.cpp -o Hello

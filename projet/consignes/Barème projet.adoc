@@ -1,0 +1,91 @@
+:hardbreaks:
+= Barème projet
+
+== Qualité du code 
+
+Sur 5 points.
+
+Cette partie évalue le respect des règles de codage qui assurent que le code est facile à comprendre et à maintenir.
+Cette qualité sera déterminée par un outil (Sonarqube) qui utilise une liste de règles.
+Vous aurez bientôt accès à l'outil et à la liste de règles.
+
+== Spécifications
+
+Sur 15 points.
+
+Cette partie est la liste des fonctionnalités décrites dans le projet. Elle est découpé en deux, Code évalue la structure du code, et Fonctionnel, qui évalue le comportement du jeu.
+Toutes les lignes ne rapportent pas le même nombre de points.
+
+== Code
+
+=== Classe et héritage
+* Il y a une classe Missile, Asteroid et Spaceship.
+
+* Ces classes héritent de la classe FlyingObject.
+
+* L'héritage est correctement exploité (pas de doublons dans les classes filles, portée correcte des méthodes...).
+
+* Une collection hétérogène est utilisée pour stoker les objets.
+
+=== MVC
+
+* Le projet est construit sous la forme d'un MVC.
+
+* Toute la logique et les données se trouve dans le modèle.
+
+* Tout l'affichage est géré par la vue.
+
+* Toutes les interactions entre le  modèle et la vue passe par le contrôleur, qui gère également les interactions utilisateur.
+
+== Fonctionnel
+
+=== Déplacement
+* Les astéroïdes se déplacent en ligne droite avec une vitesse constante et réapparaissent à l'opposé lorsqu'ils sortent de l'écran.
+
+* Il n'y a qu'un seul missile affiché à l'écran qui disparaît en sortant de l'écran.
+
+* Le vaisseau tire des missile depuis l'avant qui partent dans la direction qu'il vise.
+
+* Le vaisseau a un déplacement déterminé par l'inertie, c'est-à-dire que, sans action du joueur, il se déplace en ligne droite, sans perte de vitesse. 
+
+* Le joueur peut utiliser le clavier pour modifier l'orientation du vaisseau, ou pour activer la poussée motrice, ce qui fera dévier et accélérer/ralentir le vaisseau dans le sens de son orientation.
+
+* L'image du vaisseau permet de déterminer l'avant du vaisseau. 
+
+* Le vaisseau réapparaît à l'opposé lorsqu'il sort de l'écran.
+
+=== Collision
+
+* Lorsqu'un astéroïde et un missile rentrent en collision, ils sont tous deux détruit.
+
+* Lorsqu'un astéroïde est détruit, il se divise en deux astéroïdes plus petits.
+
+* Lorsque le vaisseau rentre en collision avec un astéroïde, il perd du bouclier et devient invincible pendant un court instant.
+
+* Lorsque le vaisseau rentre en collision avec un astéroïde et qu'il n'a plus de bouclier, il est détruit.
+
+=== Divers
+
+* La position et l'orientation des astéroides est initialisée aléatoirement.
+
+* Le jeu se termine si le vaisseau est détruit ou s'il n'y a plus d'astéroides.
+
+* Le jeu quitte lorsque l'on appuie sur Echap.
+
+== Bonus et malus
+=== Bonus
+* Des fonctionnalités supplémentaires pourront rendre plus indulgente la notation des spécifications, mais ne pardonneront pas des fonctionnalités absentes.
+
+* Un très bon score de qualité (valeur donnée en même temps que l'outil) apportera un point bonus.
+
+=== Malus
+
+* -1 point si le jeu est injouable (commandes qui ne répondes pas, freez durant la partie, bug trop impactant...)
+
+* -1 si le programme crash (et que c'est reproductible)
+
+* -2 si le programme ne compile pas
+
+=== Différences
+
+* S'il y a des différences avec ces consignes qui ont été validées en classes, un fichier README les expose.

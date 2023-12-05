@@ -1,0 +1,23 @@
+:hardbreaks:
+= C++ et POO
+
+*Un pointeur* est un objet qui contient une adresse mémoire 
+
+*Un objet* est une structure de données qui combine des données (attributs) et des fonctionnalités (méthodes) liées à ces données. Il est créé (instancié) à partir d'une classe, qui sert de modèle pour définir les propriétés et le comportement de l'objet. 
+
+*Une classe* est un modèle ou un plan pour créer des objets, tandis qu'un objet est une instance spécifique créée à partir de cette classe. 
+
+*Attribut* : variable d'un objet
+*Methode* : fonctions d'un objet
+
+*Déclaration* : (prototype de la fonction) le nom de la fonction, son type de retour et le type et le nombre de ses paramètres formels. 
+
+*Définition* : corps de la fonction 
+
+*Public* : Les membres (attributs et méthodes) définis comme publics sont accessibles de l'extérieur de la classe. 
+
+*Private* : Les membres définis comme privés ne sont pas accessibles de l'extérieur de la classe. Par defaut tous les éléments sont privés.
+
+*Protected* : Les membres définis comme protégés ne sont pas accessibles de l'extérieur de la classe, mais ils peuvent être accessibles par les classes filles (héritage). 
+
+*Collection hétérogène* : Liste contenant des éléments de type différents. En POO, ce sont des pointeurs sur des objets fille dérivant de la même mère.

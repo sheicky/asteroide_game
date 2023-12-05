@@ -1,0 +1,25 @@
+:hardbreaks:
+= Tri fusion
+
+Le tri fusion est un algorithme de tri qui possède une complexité linéaire et est particulièrement intéressant avec des listes. Il utilise le concept de diviser pour régner.
+
+
+Implémentez un tri fusion pour une liste chainnée.
+
+(En faisant vos recherches sur internet, faites attention de ne pas regarder l'algorithme)
+
+image::trifusion.png[]
+
+Indice :
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+L'algorithme est récursif :
+Ecrivez le pour deux éléments, la suite découlera naturellement.

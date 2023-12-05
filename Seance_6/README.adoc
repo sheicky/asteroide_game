@@ -1,0 +1,12 @@
+:hardbreaks:
+= Seance 6
+
+== Objectifs opérationnels
+// tag::OO[]
+
+*Destructeur*
+
+* Je sais quand et comment créer un destructeur
+
+* Je sais comment les destructeurs sont appelés
+// end::OO[]
